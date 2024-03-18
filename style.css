@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Dark-cyan);
+    background-image: url("./profile-card-component-main/images/bg-pattern-top.svg"), url("./profile-card-component-main/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: top -500px left -350px, bottom -600px right -300px;
+
+}
+main{
+    width: 350px;
+    background-image: url("./profile-card-component-main/images/bg-pattern-card.svg");
+    background-size: auto;
+    background-color: white;
+    padding: 80px 0 0px 0;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+main > img {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profile {
+    padding: 30px;
+    text-align: center;
+}
+.profile > .name {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: bold;
+    font-size: 20px;
+}
+.name > span {
+    color: var(--Dark-gray);
+    font-weight: lighter;
+}
+.profile > .home{
+    color: var(--Dark-gray);
+    padding-top: 10px;
+}
+hr{
+    width: 100%;
+    border-color: var(--Dark-grayish-blue);
+    opacity: 0.2;
+}
+.row {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+.row > .each {
+    text-align: center;
+}
+.each > h3{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: bold;
+}
+.each > p{
+    color: var(--Dark-gray);
+    letter-spacing: 2px;
+    font-size: 10px;
+    padding-top: 5px;
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-size: 850px;
+    }
+}
+@media screen and (max-width: 400px) {
+    body{
+        background-size: 800px;
+    }
+}
